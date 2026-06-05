@@ -1,0 +1,22 @@
+{
+  "name": "nginxtester",
+  "version": "1.0.0",
+  "description": "tests html output",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "nginxhtml.test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "dependencies": {
+    "getenv": "^2.0.0",
+    "node-html-parser": "^7.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+name: app-test
+services:
+  app:
+    image: mynginx:latest
+    ports:
+      - 80:80
+  test:
+    image: jester:latest
+    depends_on:
+      - app
+    environment:
+      - APPURL=http://app
+#     volumes:
+#     - ./test:/var/app
+#     - node_mods:/var/app/node_modules
+# volumes:
+#   node_mods:
+#     external: false
+  
