@@ -11,10 +11,10 @@ resource "aws_cloudwatch_dashboard" "ecs_nginx" {
         height = 6
 
         properties = {
-          title   = "ECS CPU Utilization"
-          view    = "timeSeries"
-          region  = var.aws_region
-          stat    = "Average"
+          title  = "ECS CPU Utilization"
+          view   = "timeSeries"
+          region = var.aws_region
+          stat   = "Average"
 
           metrics = [
             [
@@ -37,10 +37,10 @@ resource "aws_cloudwatch_dashboard" "ecs_nginx" {
         height = 6
 
         properties = {
-          title   = "ECS Memory Utilization"
-          view    = "timeSeries"
-          region  = var.aws_region
-          stat    = "Average"
+          title  = "ECS Memory Utilization"
+          view   = "timeSeries"
+          region = var.aws_region
+          stat   = "Average"
 
           metrics = [
             [
@@ -63,19 +63,19 @@ resource "aws_cloudwatch_dashboard" "ecs_nginx" {
         height = 6
 
         properties = {
-            title  = "Successful Pages (HTTP 200)"
-            view   = "timeSeries"
-            region = var.aws_region
-            stat   = "Sum"
+          title  = "Successful Pages (HTTP 200)"
+          view   = "timeSeries"
+          region = var.aws_region
+          stat   = "Sum"
 
-            metrics = [
+          metrics = [
             [
-                "Custom/Nginx",
-                "NginxHttp200"
+              "Custom/Nginx",
+              "NginxHttp200"
             ]
-            ]
+          ]
         }
-    }
+      }
     ]
   })
 }
