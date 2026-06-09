@@ -11,7 +11,7 @@ test('tests output html', async () => {
     expect(root.getElementsByTagName('h1').length).toBe(1);
     expect(root.getElementsByTagName('p').length).toBe(1);
 
-    const testText = 'Nginx Test 3!';
+    const testText = 'Nginx Test 4!';
     expect(root.querySelector('h1').innerHTML).toBe(testText);
     expect(root.querySelector('p').innerHTML).toBe(testText);
 });

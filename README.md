@@ -1,4 +1,4 @@
-# ECS Nginx Demo 3
+# ECS Nginx Demo 4
 
 ## Popis
 Tento projekt nasazuje nginx aplikaci na AWS ECS pomocí Terraform a GitHub Actions.
@@ -9,7 +9,7 @@ a podruhé po nasazení ověřuje html přímo v ECS.
 - AWS ECS Fargate cluster
 - Application Load Balancer
 - VPC s public subnety
-- CloudWatch logging
+- CloudWatch logging spolu s dashboard monitorující využití CPU, RAM a počet úspěšných přístupů za 5 minut
 
 ### Nasazení
 1. Fork tento repository
